@@ -1,0 +1,54 @@
+.baseline__header-button {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  cursor: pointer; /* Make the entire area clickable */
+  display: flex;
+  flex-direction: column; /* Stack text and button vertically */
+  align-items: center; /* Ensure center alignment */
+  justify-content: center; /* Center everything */
+}
+
+.button-text {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 0.5rem; /* Space between text and button */
+  text-transform: uppercase;
+  text-align: center; /* Ensure the text is centered */
+}
+
+.baseline__header-button button {
+  background-color: transparent;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.down-arrow {
+  border-color: orange;
+  color: orange;
+  font-size: 4vw;
+  line-height: 1;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .down-arrow {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .down-arrow {
+    font-size: 8vw;
+  }
+}
