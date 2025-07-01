@@ -1,47 +1,50 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine, RiArrowDownSLine } from 'react-icons/ri';
+import { Sidebar } from '../../components';
 import './navbar.css';
 import logo from '../../assets/baseline-logo.svg';
 
-const Menu = () => (
-  <>
-  <p><a href='#events'>Events <RiArrowDownSLine size={24} style={{ verticalAlign: "middle" }} /></a></p>
-  <p><a href='#dienstleistungen'>Dienstleistungen</a></p>
-  <p><a href='#ueberUns'>Über uns <RiArrowDownSLine size={24} style={{ verticalAlign: "middle" }} /></a></p>
-  </>
-)
-
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleSidebar, setToggleSidebar] = useState(false);
+
+  const openSidebar = () => setToggleSidebar(true);
+  const closeSidebar = () => setToggleSidebar(false);
 
   return (
     <div className='baseline__navbar'>
-      <div className='baseline__navbar-logo'>
-          <img src={logo} alt='logo'/>
+      <div className='baseline__navbar--logo'>
+        <img src={logo} alt='Logo' />
       </div>
-      <div className='baseline__navbar-links'>  
-         <div className='baseline__navbar-links_container'>
-            <Menu />
-         </div>
+
+      <div className='baseline__navbar--links'>
+        <div className='baseline__navbar--links-container'>
+          <p><a href='#events'>Events <RiArrowDownSLine color="white" size={27}/></a></p>
+          <p><a href='#Dienstleistungen'>Dienstleistungen</a></p>
+          <p><a href='#ueberUns'>Über uns <RiArrowDownSLine color="white" size={27}/></a></p>
+        </div>
       </div>
-      <div className='baseline__navbar-button'>
-        <button type='button'>Kontakt</button>
+      <div className='baseline__navbar--button'>
+        <button type='button'><a href='#Kontakt'>Kontakt</a></button>
       </div>
-      <div className='baseline__navbar-menu'>
-        {toggleMenu
-          ? <RiCloseLine color="white" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="white" size={27} onClick={() => setToggleMenu(true)} />
-          }
-          {toggleMenu && (
-            <div className="baseline__navbar-menu_container scale-up-center">
-              <div className="baseline__navbar-menu_container-links">
-                <Menu />
-              </div>
+      
+      <div className='baseline__navbar--sidebar'>
+        {!toggleSidebar && <RiMenu3Line color="white" size={27} onClick={openSidebar} />}
+        {toggleSidebar && (
+          <div className="baseline__navbar--sidebar-container open">
+            <RiCloseLine
+              color="white"
+              size={27}
+              onClick={closeSidebar}
+              className="baseline__navbar--sidebar_close"
+            />
+            <div className="baseline__navbar--sidebar-container-links">
+              <Sidebar onClick={closeSidebar} />
             </div>
-          )}
+          </div>
+        )}
       </div>
     </div>
-  )
+  );
 };
 
 export default Navbar;

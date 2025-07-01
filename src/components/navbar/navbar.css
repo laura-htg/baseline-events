@@ -1,123 +1,146 @@
 .baseline__navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #00000053;
-    box-shadow: black;
     padding: 1rem 3rem;
 }
 
-.baseline__navbar-links {
+.baseline__navbar--logo img {
+    width: 200px;
+}
+
+.baseline__navbar--links {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: var(--font-family);
+    color: #fff;
 }
 
-.baseline__navbar-links a:hover {
-    color: #ffffffa6;
-}
-
-.baseline__navbar-logo {
-    margin-right: 2rem;
-    justify-content: flex-start;
-}
-
-.baseline__navbar-logo img {
-    width: 200px;
-}
-
-.baseline__navbar-links_container {
+.baseline__navbar--links-container {
     display: flex;
     flex-direction: row;
 }
 
-.baseline__navbar-links_container p, 
-.baseline__navbar-menu_container p {
-    color: var(--color-headline);
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
-    margin: 0 3rem;
-    cursor: pointer;
-
+.baseline__navbar--links-container p {
+    display: flex;
+    align-items: center;
+    margin: 0; 
 }
 
-.baseline__navbar-button button {
-    padding: 0.3rem 1rem;
-    color: var(--color-headline);
-    font-family: var(--font-family);
+.baseline__navbar--links-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
     font-weight: 600;
-    border-color: white;
-    background: transparent;
-    border-radius: 11px;
-    border: 1;
-    font-size: 18px;
-    line-height: 25px;
-    outline: none;
-    cursor: pointer;
+    margin-right: 90px;
 }
 
-.baseline__navbar-button button:hover {
+.baseline__navbar--links-container a:hover {
     color: #ffffffa6;
 }
 
-.baseline__navbar-menu {
-    margin-left: 1rem;
-    display: none;
-    position: relative;
+.baseline__navbar--links-container a svg {
+    margin-left: 8px;
 }
 
-.baseline__navbar-menu svg {
+.baseline__navbar--button button {
+    padding: 0.3rem 1rem;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 11px;
+    font-size: 18px;
     cursor: pointer;
 }
 
-.baseline__navbar-menu_container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    text-align: end;
-    background: var(--color-footer);
+.baseline__navbar--button button:hover {
+    color: #ffffffa6;
+}
+
+.baseline__navbar--sidebar {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+    font-family: var(--font-family);
+    color: #fff;
+}
+
+.baseline__navbar--sidebar svg {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.baseline__navbar--sidebar-container {
+    z-index: 1000;
     padding: 2rem;
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 0;
     right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
-    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 25vw;
+    max-width: 300px;
+    min-width: 200px;
+    background: var(--color-sidebar);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
 }
 
-.baseline__navbar-menu_container p {
-    margin: 1rem 0;
-    color: aliceblue;
+.baseline__navbar--sidebar-container.open {
+    transform: translateX(0%);
 }
 
-@media screen and (max-width: 1200px) {
-    .baseline__navbar-links_container {
-        display: none;
+.baseline__navbar--sidebar-container-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.baseline__navbar--sidebar_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .baseline__navbar--links-container {
+        display: none; 
     }
 
-    .baseline__navbar-menu {
-        display: flex;
+    .baseline__navbar--sidebar {
+        display: flex; 
+    }
+
+    .baseline__navbar--sidebar-container {
+        width: 40vw;
+        max-width: none; 
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .baseline__navbar {
-        padding: 2rem 4rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .baseline__navbar--logo img {
+        width: 150px;
+    }
+
+    .baseline__navbar--button button {
+        font-size: 16px;
+        padding: 0.2rem 0.8rem;
+    }
+
+    .baseline__navbar--sidebar-container {
+        width: 50vw; 
+        max-width: none;
     }
 }
-
-@media screen and (max-width: 550px) {
-    .baseline__navbar {
-        padding: 2rem;
-    }
-
-    .baseline__navbar-menu_container {
-        top: 20px;
-    }
-}
-

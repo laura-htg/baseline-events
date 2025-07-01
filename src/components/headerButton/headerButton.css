@@ -1,28 +1,28 @@
-.baseline__header-button {
+.baseline__header--button {
   position: absolute;
   bottom: -25%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   text-align: center;
-  cursor: pointer; /* Make the entire area clickable */
+  cursor: pointer;
   display: flex;
-  flex-direction: column; /* Stack text and button vertically */
-  align-items: center; /* Ensure center alignment */
-  justify-content: center; /* Center everything */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-text {
+.baseline__header--button-text {
   font-family: Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: orange;
-  margin-bottom: 0.5rem; /* Space between text and button */
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
-  text-align: center; /* Ensure the text is centered */
+  text-align: center;
 }
 
-.baseline__header-button button {
+.baseline__header--button button {
   background-color: transparent;
   border-color: transparent;
   display: flex;
@@ -40,7 +40,6 @@
   line-height: 1;
 }
 
-/* Media queries for responsive adjustments */
 @media (max-width: 768px) {
   .down-arrow {
     font-size: 6vw;

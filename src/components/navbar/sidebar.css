@@ -1,0 +1,47 @@
+.baseline__sidebar a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+}
+
+.baseline__sidebar a span {
+    margin-right: 8px; 
+}
+
+.baseline__sidebar a svg {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.baseline__sidebar p {
+    margin: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 50px;
+}
+
+.baseline__sidebar a:hover {
+    color: #ffffffa6;
+}
+
+.baseline__sidebar--footer {
+    position: absolute; 
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.baseline__sidebar--footer a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.baseline__sidebar--footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+

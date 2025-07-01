@@ -7,6 +7,7 @@
 
 body {
   background: var(--color-bg);
+  overflow-x: hidden; 
 }
 
 a {
@@ -14,26 +15,25 @@ a {
   text-decoration: none;
 }
 
-.gradient__bg {
+.baseline__gradient--bg {
   background: linear-gradient(#17052b00, #17052ba6), url("assets/concert.jpg");
-
-  background-size: cover; /* Ensures the image covers the entire element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 85vh; /* Optional: Makes the background fill the viewport height */
-  width: 100%; /* Ensures the background spans the full width */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 100%;
 
 }
 
-.section__padding {
+.baseline__section--padding {
   padding: 4rem 6rem;
 }
 
-.section__margin {
+.baseline__section--margin {
   margin: 4rem 6rem;
 }
 
-.scale-up-center {
+.baseline__animation--scale-up-center {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -61,21 +61,21 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-  .section__padding {
+  .baseline__section--padding {
     padding: 4rem;
   }
 
-  .section__margin {
+  .baseline__section--margin {
     margin: 4rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .section__padding {
+  .baseline__section--padding {
     padding: 4rem 2rem;
   }
 
-  .section__margin {
+  .baseline__section--margin {
     margin: 4rem 2rem;
   }  
 }

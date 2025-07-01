@@ -1,0 +1,28 @@
+.baseline__footer {
+    background-color: var(--color-footer);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  
+  .baseline__footer .baseline__footer--container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .baseline__footer .baseline__footer--text {
+    margin-bottom: 10px;
+  }
+  
+ .baseline__footer--nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+.baseline__footer--nav a {
+    color: var(--color-highlightedText);
+    text-decoration: none;
+  }

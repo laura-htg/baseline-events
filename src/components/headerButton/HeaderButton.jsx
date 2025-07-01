@@ -4,8 +4,8 @@ import './headerButton.css';
 
 const HeaderButton = ({ scrollToTimeline }) => {
   return (
-    <div className="baseline__header-button" onClick={scrollToTimeline}>
-      <span className="button-text">Our Story</span>
+    <div className="baseline__header--button" onClick={scrollToTimeline}>
+      <span className="baseline__header--button-text">Unsere Geschichte</span>
       <button type="button">
         <RiArrowDownWideLine className="down-arrow" size={60} />
       </button>

@@ -1,0 +1,53 @@
+.baseline__timeline--button {
+    bottom: -1%;
+    left: 50%;
+   
+    z-index: 10;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+  
+  .button-text {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .baseline__timeline--button button {
+    background-color: transparent;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  .up-arrow {
+    border-color: orange;
+    color: orange;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .down-arrow {
+      font-size: 6vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .down-arrow {
+      font-size: 8vw;
+    }
+  }
+  
