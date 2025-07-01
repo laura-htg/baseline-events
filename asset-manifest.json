@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/baseline-events/static/css/main.d649cbea.css",
+    "main.js": "/baseline-events/static/js/main.163260a2.js",
+    "static/media/videoInterviewNew.mp4": "/baseline-events/static/media/videoInterviewNew.1394120f9922311bcdfd.mp4",
+    "static/media/arenaView.jpg": "/baseline-events/static/media/arenaView.ad635dab1b2338bd8383.jpg",
+    "static/media/crowdStageView.jpg": "/baseline-events/static/media/crowdStageView.a13f29af9e92fbcae757.jpg",
+    "static/media/group1.jpg": "/baseline-events/static/media/group1.fd02e6a0a93ec0e75415.jpg",
+    "static/media/woman1.jpg": "/baseline-events/static/media/woman1.a223ed8d4c4b029893fe.jpg",
+    "static/media/woman2.jpg": "/baseline-events/static/media/woman2.8ed352d5c3b34c021923.jpg",
+    "static/media/concertHands.jpg": "/baseline-events/static/media/concertHands.ef27c0f9b59ef5170c72.jpg",
+    "static/media/concert.jpg": "/baseline-events/static/media/concert.cb71fb2beb03e682af5c.jpg",
+    "static/media/group3.jpg": "/baseline-events/static/media/group3.73d7bfa5d7d2533ab9a5.jpg",
+    "static/media/team.jpg": "/baseline-events/static/media/team.f70bfe5ea2a5aefcb31b.jpg",
+    "static/media/group2.jpg": "/baseline-events/static/media/group2.7d63e290059378aeab23.jpg",
+    "static/media/onStage.jpg": "/baseline-events/static/media/onStage.3210ff7aeb788a1c19f8.jpg",
+    "static/media/coupleInCrowd.png": "/baseline-events/static/media/coupleInCrowd.f36be756dc3707700553.png",
+    "static/media/baseline-logo.svg": "/baseline-events/static/media/baseline-logo.8b4545daf309727f9403dfd421897557.svg",
+    "index.html": "/baseline-events/index.html",
+    "main.d649cbea.css.map": "/baseline-events/static/css/main.d649cbea.css.map",
+    "main.163260a2.js.map": "/baseline-events/static/js/main.163260a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d649cbea.css",
+    "static/js/main.163260a2.js"
+  ]
+}
